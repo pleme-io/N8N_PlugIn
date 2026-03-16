@@ -15,7 +15,7 @@
         version = "0.0.0-dev";
         src = self;
         sourceRoot = "source/n8n-nodes-akeyless";
-        npmDepsHash = "sha256-i7qJKvYzYdVm/ZpWW9iM9Ica65NV1PegEDDkmoSM9Mc="; # TODO: set correct hash
+        npmDepsHash = "sha256-i7qJKvYzYdVm/ZpWW9iM9Ica65NV1PegEDDkmoSM9Mc=";
         dontNpmBuild = false;
         npmBuildScript = "build";
         meta = {
