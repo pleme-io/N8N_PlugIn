@@ -1,8 +1,8 @@
 {
   description = "n8n community node for Akeyless Secrets Management integration with API Key authentication";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
-    substrate = { url = "github:pleme-io/substrate"; inputs.nixpkgs.follows = "nixpkgs"; };
+    nixpkgs.follows = "substrate/nixpkgs";
+    substrate = { url = "github:pleme-io/substrate";};
     flake-utils.url = "github:numtide/flake-utils";
   };
   outputs = inputs: (import "${inputs.substrate}/lib/repo-flake.nix" {
